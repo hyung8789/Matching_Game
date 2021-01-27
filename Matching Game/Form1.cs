@@ -25,7 +25,7 @@ namespace Matching_Game
 
         uint global_timer_count = 0;
 
-        public void assign_icons_to_squares()
+        private void assign_icons_to_squares()
         {
             foreach (Control control in tableLayoutPanel1.Controls) //레이아웃 패널의 각 컨트롤에 대하여
             {
@@ -40,7 +40,7 @@ namespace Matching_Game
                 }
             }
         }
-        public void chk_for_winner() //게임 종료 판별
+        private void chk_for_winner() //게임 종료 판별
         {
             //모든 라벨이 판별되었으면 종료
             foreach (Control control in tableLayoutPanel1.Controls)
